@@ -37,6 +37,17 @@ const Navbar = () => {
             ))}
           </div>
 
+          <div className="flex items-center justify-center min-h-screen">
+            <Link
+              href={'https://rekofa-backend.onrender.com/admin/login'}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-purple-600 text-white rounded-lg shadow-md hover:bg-purple-700"
+            >
+              Go to Admin Panel
+            </Link>
+          </div>
+
           {/* Button */}
           <Button text={"Get a Quote"} />
         </section>
