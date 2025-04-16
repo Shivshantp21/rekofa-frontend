@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Define CSS variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --prim-color: #9e0000;
+  --font-sans: var(--font-montserrat);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Ensure CSS variables are used consistently */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Global Reset for HTML and Body (Avoids Affecting Tailwind Components) */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh; /* Ensures full viewport height */
+  width: 100%;
+  overflow-x: hidden; /* Prevents unwanted horizontal scroll */
+}
+
+/* Apply global styles but avoid overriding Tailwind utility classes */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  line-height: 1.5; /* Improves text readability */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Dark mode settings (optional, but properly structured) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.slick-slide div{
+  margin: 0 10px;
+}
+
+.product-card:hover .product-head{
+  color: orangered;
+}
+.product-card:hover .product-icon{
+  color: orangered;
+}
