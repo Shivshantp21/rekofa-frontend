@@ -37,7 +37,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="flex items-center justify-center min-h-screen">
+          <div className="">
             <Link
               href={'https://rekofa-backend.onrender.com/admin/login'}
               target="_blank"

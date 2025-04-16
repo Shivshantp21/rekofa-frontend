@@ -26,7 +26,7 @@ export default function StickyTimeline() {
         { year: "2025", text: "— Building net-zero facility", image: "/tractor.jpg" },
       ]
     }
-  ];IL
+  ];
 
   return (
     <div className="h-screen overflow-y-scroll snap-y snap-mandatory no-scrollbar">
