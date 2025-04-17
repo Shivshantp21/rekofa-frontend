@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 async function getBlogs() {
-    const res = await fetch('http://localhost:3000/api/admin/blogs/', {
+    const res = await fetch('https://rekofa-backend.onrender.com/api/admin/blogs/', {
       cache: 'no-store', // or 'force-cache' if you want pre-rendered
     });
   
