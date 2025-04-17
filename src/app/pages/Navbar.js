@@ -10,7 +10,7 @@ const Navbar = () => {
   const path = usePathname();
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md text-black">
       <div className="w-full px-14">
         <section className="flex justify-between items-center relative">
           {/* Logo */}
