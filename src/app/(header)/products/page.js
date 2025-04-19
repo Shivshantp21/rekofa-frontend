@@ -37,7 +37,7 @@ const Page = () => {
               href={`/products/${item.id}`}
               className="text-black product-icon flex items-center"
             >
-              <MdOutlineDoubleArrow size={24} />
+              {/* <MdOutlineDoubleArrow size={24} /> */}
             </Link>
           </div>
         </div>
