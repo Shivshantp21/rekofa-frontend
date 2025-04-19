@@ -38,28 +38,31 @@ const Find = () => {
             title: "Our offices",
             text: "View our locations around the world and find contact details for your nearest office.",
             link: "Locate the Nearest Office",
+            img: '/location.png',
             icon: <FaMagnifyingGlassLocation />,
           },
           {
             title: "Drop us a line",
             text: "You can contact us by filling in this form any time you need professional support and guidance.",
             link: "Fill Our Form",
+            img: '/message.png',
             icon:<MdConnectWithoutContact />,
           },
           {
             title: "Support",
             text: "Learn more about us and find resources that will help you with all of our products.",
             link: "Open a Ticket",
+            img: '/call.png',
             icon:<MdSupportAgent />,
           },
         ].map((item, index) => (
           <div key={index} className="relative">
             <Image
-              src="/logo.png"
+              src={item.img}
               alt={item.title}
-              width={300}
-              height={300}
-              className="w-full opacity-30"
+              width={200}
+              height={100}
+              className=" opacity-30 ml-10"
             />
             <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center p-4">
               <p className="text-5xl mb-5">{item.icon}</p>

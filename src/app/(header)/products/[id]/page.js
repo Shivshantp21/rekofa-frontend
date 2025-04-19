@@ -46,7 +46,7 @@ const ProductDetail = async ({ params }) => {
       </div>
 
       {/* Technical Specification - Only for Hydraulic Thread Rolling Machine */}
-      {product.id === "hydraulic-thread-rolling" && product.technicalSpecifications && (
+      {["hydraulic-thread-rolling", "thread-rolling", "hydraulic-rolling"].includes(product.id) && product.technicalSpecifications && (
         <section>
           <div className="max-w-6xl mx-auto my-10 px-4">
             <h2 className="text-3xl font-bold mb-6">Technical Specifications</h2>
