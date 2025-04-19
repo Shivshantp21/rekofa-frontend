@@ -1,7 +1,6 @@
 import productData from "@/app/data/productData";
 import Image from "next/image";
 import Link from "next/link";
-import { MdOutlineDoubleArrow } from "react-icons/md";
 import React from "react";
 
 const Page = () => {
