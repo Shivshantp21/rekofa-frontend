@@ -23,8 +23,8 @@ export default function ParallaxSection() {
     `flex items-center gap-2 px-6 py-4 text-sm font-semibold cursor-pointer transition-all duration-300
       ${
         activeTab === tab
-          ? "bg-orange-500 text-white rounded-tl-2xl"
-          : "text-gray-700 hover:text-orange-500"
+          ? "bg-[#9e0000] text-white rounded-tl-2xl"
+          : "text-gray-700 hover:text-[#9e0000]"
       }`;
 
   return (
@@ -41,7 +41,7 @@ export default function ParallaxSection() {
         <div className="relative z-20 max-w-7xl text-white mx-auto flex justify-center gap-20 items-center">
           <div className="">
             {" "}
-            <h3 className="text-sm font-semibold uppercase text-orange-500 mb-3">
+            <h3 className="text-sm font-semibold uppercase text-[#9e0000] mb-3">
               Our Approach
             </h3>
             <h1 className="text-5xl font-semibold leading-tight mb-4">
@@ -108,19 +108,19 @@ export default function ParallaxSection() {
                 </p>
                 <ul className="space-y-4 text-sm text-gray-800">
                   <li className="flex items-center gap-2">
-                    <Settings className="w-4 h-4 text-orange-500" /> Sustainable
+                    <Settings className="w-4 h-4 text-[#9e0000]" /> Sustainable
                     Manufacturing Practices
                   </li>
                   <li className="flex items-center gap-2">
-                    <Cpu className="w-4 h-4 text-orange-500" /> Advanced
+                    <Cpu className="w-4 h-4 text-[#9e0000]" /> Advanced
                     Technology Integration
                   </li>
                   <li className="flex items-center gap-2">
-                    <Leaf className="w-4 h-4 text-orange-500" /> Community and
+                    <Leaf className="w-4 h-4 text-[#9e0000]" /> Community and
                     Environmental Responsibility
                   </li>
                   <li className="flex items-center gap-2">
-                    <TrendingUp className="w-4 h-4 text-orange-500" />{" "}
+                    <TrendingUp className="w-4 h-4 text-[#9e0000]" />{" "}
                     Innovation-Driven Growth
                   </li>
                 </ul>
@@ -147,19 +147,19 @@ export default function ParallaxSection() {
                 </p>
                 <ul className="space-y-4 text-sm text-gray-800">
                   <li className="flex items-center gap-2">
-                    <Globe className="w-4 h-4 text-orange-500" /> Global
+                    <Globe className="w-4 h-4 text-[#9e0000]" /> Global
                     Innovation Leadership
                   </li>
                   <li className="flex items-center gap-2">
-                    <Leaf className="w-4 h-4 text-orange-500" /> Long-term
+                    <Leaf className="w-4 h-4 text-[#9e0000]" /> Long-term
                     Environmental Sustainability
                   </li>
                   <li className="flex items-center gap-2">
-                    <Leaf className="w-4 h-4 text-orange-500" /> Long-term
+                    <Leaf className="w-4 h-4 text-[#9e0000]" /> Long-term
                     Environmental Sustainability
                   </li>
                   <li className="flex items-center gap-2">
-                    <Rocket className="w-4 h-4 text-orange-500" /> Future-Ready
+                    <Rocket className="w-4 h-4 text-[#9e0000]" /> Future-Ready
                     Manufacturing
                   </li>
                 </ul>
@@ -186,19 +186,19 @@ export default function ParallaxSection() {
                 </p>
                 <ul className="space-y-4 text-sm text-gray-800">
                   <li className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-orange-500" />{" "}
+                    <ShieldCheck className="w-4 h-4 text-[#9e0000]" />{" "}
                     Integrity in Everything
                   </li>
                   <li className="flex items-center gap-2">
-                    <Cpu className="w-4 h-4 text-orange-500" /> Constant
+                    <Cpu className="w-4 h-4 text-[#9e0000]" /> Constant
                     Innovation
                   </li>
                   <li className="flex items-center gap-2">
-                    <Cpu className="w-4 h-4 text-orange-500" /> Constant
+                    <Cpu className="w-4 h-4 text-[#9e0000]" /> Constant
                     Innovation
                   </li>
                   <li className="flex items-center gap-2">
-                    <Users className="w-4 h-4 text-orange-500" /> Customer-First
+                    <Users className="w-4 h-4 text-[#9e0000]" /> Customer-First
                     Approach
                   </li>
                 </ul>

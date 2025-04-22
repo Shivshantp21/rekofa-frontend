@@ -32,19 +32,19 @@ const ContactPage = () => {
           <h2 className="text-3xl font-bold text-blue-900 mb-4 whitespace-nowrap">
             We’ll Take It From There.
           </h2>
-          <p className="text-orange-600 mb-4 font-bold">
+          <p className="text-[#9e0000] mb-4 font-bold">
             Leave a message and <br />
             we will get back to you in 24 hrs
           </p>
           <p className="mb-2 text-lg font-semibold">
             Mobile -{" "}
-            <span className="text-orange-600">
+            <span className="text-[#9e0000]">
               +91-98140-21475, 98882-00084
             </span>
           </p>
           <p className="mb-6 text-lg font-semibold">
             Email -{" "}
-            <span className="text-orange-600">info@rekofaindia.com</span>
+            <span className="text-[#9e0000]">info@rekofaindia.com</span>
           </p>
         </div>
 
@@ -98,7 +98,7 @@ const ContactPage = () => {
         {/* Left Side - Address List */}
         <div className="w-full lg:w-1/3">
           <div className="text-3xl text-black text-center lg:text-left mb-8 font-bold flex items-center gap-2">
-            <FaMapMarkerAlt className="text-orange-500" size={28} />
+            <FaMapMarkerAlt className="text-[#9e0000]" size={28} />
             Find Us Here
           </div>
 
@@ -108,7 +108,7 @@ const ContactPage = () => {
                 key={index}
                 className="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition"
               >
-                <div className="flex items-center gap-2 text-orange-600 font-semibold text-lg mb-1">
+                <div className="flex items-center gap-2 text-[#9e0000] font-semibold text-lg mb-1">
                   <HiOutlineLocationMarker size={22} />
                   {item.name}
                 </div>

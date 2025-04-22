@@ -1,30 +1,30 @@
 const productData = [
     {
-      id: "hydraulic-thread-rolling",
+      id: "hydraulic",
       image: "/Machine1.png",
       title: "Hydraulic Thread Rolling",
       link: "/products/hydraulic-thread-rolling",
     },
     {
-      id: "thread-rolling",
+      id: "thread",
       image: "/Machine2.png",
       title: "Hydraulic Thread Rolling",
       link: "/products/thread-rolling",
     },
     {
-      id: "hydraulic-rolling",
+      id: "rolling",
       image: "/Machine3.png",
       title: "Hydraulic Thread Rolling",
       link: "/products/hydraulic-rolling",
     },
     {
-      id: "Taps",
+      id: "taps",
       image: "/Taps.png",
       title: "Thread Taps",
       link: "/products/forging",
     },
     {
-      id: "Threading",
+      id: "threading",
       image: "/Products.png",
       title: "Threading & Tap Tools ",
       link: "/products/threading-tools",

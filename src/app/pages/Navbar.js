@@ -2,12 +2,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NavData from "../data/navData";
 import Button from "../compo/Button";
 
 const Navbar = () => {
-  const path = usePathname();
+  const pathname = usePathname();
+  const [currentPath, setCurrentPath] = useState("");
+
+  useEffect(() => {
+    // Normalize path to remove trailing slashes
+    const cleanPath = pathname.replace(/\/$/, "") || "/";
+    setCurrentPath(cleanPath);
+  }, [pathname]);
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md text-black">
@@ -22,33 +29,42 @@ const Navbar = () => {
 
           {/* Navigation */}
           <div className="flex gap-10">
-            {NavData.map((item, index) => (
-              <div
-                key={index}
-                className="font-bold flex flex-col items-center relative"
+            {NavData.map((item, index) => {
+              const isActive =
+                currentPath === item.link.replace(/\/$/, "") ||
+                pathname === item.link;
+
+              return (
+                <div
+                  key={index}
+                  className="font-bold flex flex-col items-center relative"
+                >
+                  <Link href={item.link} className="py-8">
+                    {item.title}
+                  </Link>
+                  {isActive && (
+                    <div className="w-full h-1 bg-[#9e0000]"></div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Admin Panel Button */}
+          {currentPath === "/blogs" && (
+            <div>
+              <Link
+                href={"https://rekofa-backend.onrender.com/admin/login"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 text-white rounded-lg shadow-md bg-black"
               >
-                <Link href={item.link} className="py-8">
-                  {item.title}
-                </Link>
-                {path === item.link && (
-                  <div className="w-full h-1 bg-orange-500"></div>
-                )}
-              </div>
-            ))}
-          </div>
+                Admin Panel
+              </Link>
+            </div>
+          )}
 
-          <div className="">
-            <Link
-              href={'https://rekofa-backend.onrender.com/admin/login'}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-purple-600 text-white rounded-lg shadow-md hover:bg-purple-700"
-            >
-              Go to Admin Panel
-            </Link>
-          </div>
-
-          {/* Button */}
+          {/* CTA Button */}
           <Button text={"Get a Quote"} />
         </section>
       </div>

@@ -36,7 +36,7 @@ const Footer = () => {
               placeholder="Message"
               className="border p-2 rounded-md w-full"
             />
-            <button className="bg-orange-500 px-3 py-2 rounded-full ml-2">➜</button>
+            <button className="bg-black text-white px-3 py-2 rounded-full ml-2">➜</button>
           </div>
         </div>
 
@@ -71,7 +71,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-            <Link href="#" className="text-orange-500 mt-2 inline-block">
+            <Link href="#" className="text-[#9e0000] mt-2 inline-block">
               View More
             </Link>
           </div>

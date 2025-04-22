@@ -58,7 +58,7 @@ const Hero = () => {
             onClick={() => setActiveTab(key)}
             className={`flex-1 py-6 px-8 font-semibold flex items-center justify-center gap-3 text-lg transition-all duration-300 border-b-4 ${
               activeTab === key
-                ? "border-orange-500 bg-[#ff91001a] text-orange-500"
+                ? "border-[#9e0000] bg-[#ff91001a] text-[#9e0000]"
                 : "border-transparent text-gray-600 hover:text-orange-400"
             }`}
           >
@@ -83,7 +83,7 @@ const Hero = () => {
                 key={index}
                 className="flex items-center gap-3 text-gray-800 text-base"
               >
-                <span className="text-orange-500">⚙️</span>
+                <span className="text-[#9e0000]">⚙️</span>
                 {point}
               </li>
             ))}
@@ -91,7 +91,7 @@ const Hero = () => {
           <div>
             <button
               onClick={() => router.push("/")}
-              className="relative overflow-hidden bg-orange-500 py-4 px-8 text-white flex items-center gap-4 group transition-all duration-500"
+              className="relative overflow-hidden bg-[#9e0000] py-4 px-8 text-white flex items-center gap-4 group transition-all duration-500"
             >
               <span className="relative z-10">Contact Us</span>
               <FaArrowRightLong className="relative z-10 transition-transform duration-300 group-hover:translate-x-2 group-hover:rotate-0 rotate-0" />

@@ -32,7 +32,7 @@ export default function AboutSection() {
           </div>
 
           <div className="absolute -top-[220px] left-[230px]  p-4 flex gap-3 ">
-            <p className="text-orange-500 font-bold text-5xl">25+</p>
+            <p className="text-[#9e0000] font-bold text-5xl">25+</p>
             <p className="text-xl">Year Of Experience</p>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function AboutSection() {
         {/* Right side - text content */}
         <div className="max-w-[600px] flex flex-col gap-6">
           <div>
-            <p className="uppercase text-sm tracking-widest text-orange-500 font-semibold">
+            <p className="uppercase text-sm tracking-widest text-[#9e0000] font-semibold">
               ⚙️ About Us
             </p>
             <h2 className="text-5xl leading-snug">
@@ -58,26 +58,26 @@ export default function AboutSection() {
 
           <div className="flex flex-col gap-3 text-xl text-gray-700">
             <div className="flex items-center gap-2">
-              <span className="text-orange-500">
+              <span className="text-[#9e0000]">
                 {" "}
                 <GiGearHammer />
               </span>
               Sustainable Manufacturing
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-orange-500">
+              <span className="text-[#9e0000]">
                 <GiGearHammer />
               </span>
               Advanced Automation
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-orange-500">
+              <span className="text-[#9e0000]">
                 <GiGearHammer />
               </span>
               Efficient Production Processes
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-orange-500">
+              <span className="text-[#9e0000]">
                 <GiGearHammer />
               </span>
               Reliable Delivery Services
@@ -87,7 +87,7 @@ export default function AboutSection() {
           <div className="flex items-center gap-6 mt-4">
             <button
               onClick={() => router.push("/")}
-              className="relative overflow-hidden bg-orange-500 py-4 px-8 text-white flex items-center gap-4 group transition-all duration-500"
+              className="relative overflow-hidden bg-[#9e0000] py-4 px-8 text-white flex items-center gap-4 group transition-all duration-500"
             >
               <span className="relative z-10">Contact Us</span>
               <FaArrowRightLong className="relative z-10 transition-transform duration-300 group-hover:rotate-0 rotate-[-45deg]" />
@@ -95,7 +95,7 @@ export default function AboutSection() {
             </button>
 
             <div className="bg-gray-100 p-4 rounded-xl text-center">
-              <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-600">
+              <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#9e0000] to-purple-600">
                 4.9
               </p>
               <p className="text-yellow-500">★★★★★</p>

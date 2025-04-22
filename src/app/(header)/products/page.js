@@ -25,7 +25,7 @@ const Page = () => {
 
           {/* Text Overlay */}
           <div className="absolute top-4 left-4 bg-opacity-90 px-3 py-2 rounded ">
-            <h2 className="text-lg font-semibold text-gray-900 product-head ">
+            <h2 className="text-lg font-semibold text-gray-900 product-head hover:text-[#9e0000] ">
               {item.title}
             </h2>
           </div>

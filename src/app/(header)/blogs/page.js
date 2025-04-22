@@ -1,19 +1,24 @@
+// src/app/pages/Slide.js (or adjust path as needed)
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-async function getBlogs() {
-    const res = await fetch('https://rekofa-backend.onrender.com/api/admin/blogs/', {
-      cache: 'no-store', // or 'force-cache' if you want pre-rendered
-    });
-  
-    if (!res.ok) throw new Error("Failed to fetch blogs");
-  
-    return res.json();
+// ✅ Fetch blog data at build time with caching
+async function fetchBlogs() {
+  const res = await fetch('https://rekofa-backend.onrender.com/api/admin/blogs/', {
+    cache: 'force-cache', // Required for static generation
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch blogs');
   }
 
-const Slide = async() => {
-    const blogs = await getBlogs();
+  return res.json();
+}
+
+export default async function SlidePage() {
+  const blogs = await fetchBlogs();
+
   return (
     <div className="container mx-auto mb-20 p-4 text-center max-w-6xl">
       <h1 className="text-4xl mb-6 text-center">Blogs</h1>
@@ -26,7 +31,7 @@ const Slide = async() => {
                 src={item.img}
                 height={300}
                 width={500}
-                alt="img"
+                alt="Blog image"
                 className="w-full h-auto object-cover transform transition-transform duration-500 ease-in-out hover:scale-105"
               />
             </div>
@@ -43,6 +48,4 @@ const Slide = async() => {
       </div>
     </div>
   );
-};
-
-export default Slide;
+}

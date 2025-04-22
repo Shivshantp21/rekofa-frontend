@@ -27,7 +27,7 @@ const CompanySection = () => {
         </div>
 
         {/* Right Content - Orange Background with Image */}
-        <div className="md:w-1/2 relative bg-orange-500 p-8 rounded-lg flex items-center">
+        <div className="md:w-1/2 relative bg-[#9e0000] p-8 rounded-lg flex items-center">
           <div>
             <h3 className="text-white text-3xl font-semibold">
               Let&apos;s Grow <span className="block">Together</span>

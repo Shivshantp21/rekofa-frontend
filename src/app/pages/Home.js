@@ -39,7 +39,7 @@ export default function HeroSection() {
     }, 4000); // Change every 4 seconds
 
     return () => clearInterval(interval);
-  }, [imageData.length]);
+  }, [imageData]);
 
   useEffect(() => {
     if (boxRef.current) {
@@ -178,7 +178,7 @@ export default function HeroSection() {
       <section className="bg-gray-100 py-12 px-4 text-center mb-20 h-[50vh]">
         <div className="max-w-4xl mx-auto mb-5">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 whitespace-nowrap mb-10">
-            Honoring <span className="text-orange-500 font-bold">50 Years</span>{" "}
+            Honoring <span className="text-[#9e0000] font-bold">50 Years</span>{" "}
             of Quality and Innovation in Power Press Machines
           </h2>
         </div>

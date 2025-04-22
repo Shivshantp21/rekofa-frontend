@@ -25,7 +25,7 @@ const Find = () => {
             placeholder="Your e-mail address"
             className="px-4 py-2 w-80 rounded-l-md text-white border-white border bg-transparent"
           />
-          <button className="bg-orange-500 px-4 py-2 rounded-r-md font-semibold">
+          <button className="bg-[#9e0000] px-4 py-2 rounded-r-md font-semibold">
             Sign me up!
           </button>
         </div>
@@ -70,7 +70,7 @@ const Find = () => {
               <p className="text-gray-400 mt-2 px-10">{item.text}</p>
               <Link
                 href={"/"}
-                className="text-orange-500 font-medium mt-2 inline-block"
+                className="text-[#9e0000] font-medium mt-2 inline-block"
               >
                 {item.link}
               </Link>

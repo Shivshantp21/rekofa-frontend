@@ -2,14 +2,8 @@ import productDetails from "@/app/data/productDetails";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProductDetail = async ({ params }) => {
-  const { id } = await params;
-
-  const product = productDetails.find((p) => p.id === id);
-
-  if (!product) {
-    return <h1 className="text-center text-2xl">Product Not Found</h1>;
-  }
+const ProductDetail = () => {
+    const product = productDetails.find((p) => p.id === "thread-rolling");
 
   return (
     <div>
@@ -27,7 +21,7 @@ const ProductDetail = async ({ params }) => {
             href={product.pdfLink}
             download
             target="_blank"
-            className="mt-6 inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-md"
+            className="mt-6 inline-block bg-[#9e0000] hover:bg-[#9e0000] text-white font-semibold py-3 px-6 rounded-md"
           >
             Download Brochure
           </Link>
